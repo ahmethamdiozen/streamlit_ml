@@ -13,11 +13,11 @@ from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_sc
 
 def run():
     st.title("Meme Kanseri Veriseti ile Model Eğitimi")
-    uploaded_file = st.sidebar.file_uploader("Lütfen Verisetinizi Yükleyiniz.", type=["csv"])
-    df = pd.read_csv(uploaded_file)
+    #uploaded_file = st.sidebar.file_uploader("Lütfen Verisetinizi Yükleyiniz.", type=["csv"])
+    #df = pd.read_csv(uploaded_file)
     set_clf = st.sidebar.selectbox("Select Model", ("KNN", "SVM", "Naive Bayes"))
 
-    #df = pd.read_csv("data.csv")
+    df = pd.read_csv("data.csv")
     st.write("Verisetinin İlk 10 Satırı")
     st.write(df.head(10))
     st.write("Verisetindeki Nitelikler")
