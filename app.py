@@ -17,7 +17,7 @@ def run():
     #df = pd.read_csv(uploaded_file) 
     set_clf = st.sidebar.selectbox("Select Model", ("KNN", "SVM", "Naive Bayes"))
 
-    df = pd.read_csv("data.csv")
+    df = pd.read_csv("https://raw.githubusercontent.com/ahmethamdiozen/streamlit_ml/main/data.csv")
     st.write("Verisetinin İlk 10 Satırı")
     st.write(df.head(10))
     st.write("Verisetindeki Nitelikler")
