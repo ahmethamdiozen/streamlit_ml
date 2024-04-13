@@ -99,3 +99,8 @@ def run():
     st.write("Dikkat etmemiz gereken metrikler her verisetine göre değişiklik gösterecektir.\n"
              "Kanser gibi bir durumu incelerken bakmamız gereken en önemli metrik ise FN değerleri olmalıdır.\n"
              "FN değeri başka bir deyişle Recall, kanser olduğu halde modelimizin sağlıklı olduğunu söylediği değerlerdir.")
+def main():
+    run()
+
+if __name__ == "__main__":
+    main()
